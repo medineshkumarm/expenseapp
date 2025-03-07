@@ -1,0 +1,3 @@
+frontend:
+delete button is not algined 
+
