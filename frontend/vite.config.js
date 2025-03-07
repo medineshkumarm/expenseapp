@@ -8,5 +8,7 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 5173,
+    strictPort: true, // Ensures it doesn't pick a random port
+    allowedHosts: ["expenseapp-frontend-aaq9.onrender.com"], // Allow your deployed frontend host
   },
 });
