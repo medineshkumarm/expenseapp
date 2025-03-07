@@ -14,6 +14,7 @@ import Income from "./pages/Dashboard/Income";
 import Expense from "./pages/Dashboard/Expense";
 import UserProvider from "./context/UserContext";
 import { Toaster } from "react-hot-toast";
+import Logout from "./components/Logout";
 export default function App() {
   console.log(import.meta.env.VITE_API_BASE_URL);
   return (
@@ -27,6 +28,8 @@ export default function App() {
             <Route path="/dashboard" exact element={<Home />} />
             <Route path="/income" exact element={<Income />} />
             <Route path="/expense" exact element={<Expense />} />
+            <Route path="/logout" element={<Logout />} />
+
           </Routes>
         </Router>
       </div>
